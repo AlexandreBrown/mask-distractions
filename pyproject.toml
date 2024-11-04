@@ -1,0 +1,15 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "madi"
+version = "1.0.0"
+authors = []
+description = "MaDi"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = ["torch", "numpy", "kornia", "tensordict", "segdac"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/madi/"]
