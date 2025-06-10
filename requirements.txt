@@ -1,0 +1,4 @@
+torch
+numpy
+tensordict
+kornia==0.8.1
