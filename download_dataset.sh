@@ -7,9 +7,6 @@ then
 else
   echo "Downloading Place365 dataset..."
   mkdir -p "$DATA_DIR"
-  cd "$DATA_DIR"
-  wget http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar
-  tar -xf places365standard_easyformat.tar
-  rm places365standard_easyformat.tar
-  cd ../../
+  wget http://data.csail.mit.edu/places/places365/places365standard_easyformat.tar -O "${DATA_DIR}places365standard_easyformat.tar"
+  tar -xf "${DATA_DIR}places365standard_easyformat.tar" -C "$DATA_DIR"
 fi
